@@ -59,13 +59,13 @@ function Favorites() {
         description="Here are your favorite business cards"
       />
 
-      {cards.length === 0 && (
+      {currentCards.length === 0 && (
         <div>
           <p className="fs-4"> There are no favorite cards you liked </p>
         </div>
       )}
 
-      {cards.length > 0 && (
+      {currentCards.length > 0 && (
         <div className="d-flex w-70 justify-center m-auto gap-5 mb-5 flex-wrap">
           {currentCards
             .filter((card) =>
