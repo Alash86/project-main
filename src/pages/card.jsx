@@ -59,6 +59,7 @@ function Card({
     }
     deleteCard(_id, bizNumber);
     onDelete(_id);
+    toast.success("Card Deleted Successfully")
   };
 
   return (
